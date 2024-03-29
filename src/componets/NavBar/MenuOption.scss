@@ -1,0 +1,22 @@
+.menu-option {
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    .sub-menu {
+      a {
+        text-decoration: none;
+        transition: all 600ms ease;
+      }
+  
+      a:hover {
+        text-decoration: underline;
+        text-decoration-style: solid;
+      }
+    }
+  }
+  

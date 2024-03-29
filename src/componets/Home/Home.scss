@@ -1,0 +1,79 @@
+.home-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    p,
+    h1 {
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      p,
+      h1 {
+        width: fit-content;
+      }
+  
+      .btn-container {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+  
+  
+        .first-btn{
+          background: rgb(245, 245, 245);
+          color: rgb(19,19,19);
+        }
+  
+        .second-btn{
+          background: rgb(83, 83, 83);
+        }
+  
+        button {
+          appearance: button;
+          backface-visibility: hidden;
+          border-radius: 6px;
+          border-width: 0;
+          box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+            rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+          box-sizing: border-box;
+          color: rgb(255, 255, 255);
+          cursor: pointer;
+          font-weight: 700;
+          height: 44px;
+          line-height: 1.15;
+          margin: 0 10px;
+          outline: none;
+          overflow: hidden;
+          padding: 0 25px;
+          position: relative;
+          text-align: center;
+          text-transform: none;
+          transform: translateZ(0);
+          transition: all 0.2s, box-shadow 0.08s ease-in;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+  
+        button:hover {
+          background: rgb(19,19,19);
+          color: rgb(245, 245, 245);
+          border: .5px solid rgba(245,245,245,.3);
+        }
+      }
+    }
+  }
+  

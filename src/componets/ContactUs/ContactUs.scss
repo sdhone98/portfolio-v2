@@ -1,0 +1,100 @@
+.contact-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .container {
+      width: 60%;
+      display: flex;
+      padding: 2rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      h2,
+      p {
+        width: fit-content;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: rgb(245, 245, 245);
+      }
+  
+      label {
+        color: rgb(245, 245, 245);
+      }
+  
+      p {
+        font-size: 1rem;
+        font-weight: 200;
+      }
+  
+      h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        padding: 1rem 0;
+      }
+  
+      .contact-form {
+        width: 100%;
+        padding: 2rem;
+        border-radius: 15px;
+        border: 0.5px solid rgba(245, 245, 245, 0.3);
+        font-family: "Inter";
+  
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+  
+        input,
+        textarea {
+          width: -webkit-fill-available;
+          padding: 0.6rem;
+          margin-bottom: 1rem;
+          color: whitesmoke;
+          font-family: "Inter";
+          font-size: 0.9rem;
+          border: 0.5px solid rgba(245, 245, 245, 0.3);
+          border-radius: 4px;
+          resize: none;
+          background: transparent;
+        }
+  
+        textarea {
+          height: 8rem;
+        }
+  
+        input[type="submit"] {
+          width: 10%;
+          margin-top: 1rem;
+          color: rgb(245, 245, 245);
+          background-color: rgb(245, 245, 245);
+          transition: all 300ms ease;
+          color: black;
+          padding: 0.5rem;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          font-family: "Inter";
+          font-weight: 600;
+        }
+  
+        input[type="submit"]:hover {
+          background: transparent;
+          color: rgb(245, 245, 245);
+          border: 0.5px solid rgba(245, 245, 245, 0.3);
+        }
+  
+        input:focus {
+          outline-width: 0.5px;
+          outline: none;
+          border: 0.5px solid rgba(245, 245, 245, 0.3);
+        }
+      }
+    }
+  }
+  
