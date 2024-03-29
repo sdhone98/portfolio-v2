@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import "./MenuOption.scss";
 const MenuOption = ({
+  id,
   optionName,
   optionValues,
   parentState,
   setParentState,
 }) => {
-
-  console.log("CHILD DATA ===> ",optionName, optionValues)
-  const [popUpState, setPopUpState] = useState(false);
+  const [popUpState, setPopUpState] = useState(true);
 
   const handleMouseEnter = () => {
     setPopUpState(true);
@@ -19,14 +18,19 @@ const MenuOption = ({
   };
 
   useEffect(() => {
-    parentState && popUpState && setPopUpState(true);
+    parentState && popUpState && setPopUpState(false);
 
     !parentState && setPopUpState(false);
   }, [parentState]);
 
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
+
   const subMenuCustomStyle = {
-    marginTop: "2.5rem",
-    padding: "1rem",
+    marginTop: "4.9rem",
+    padding: " .5rem",
     position: "absolute",
     zIndex: "99",
     width: "9rem",
@@ -50,18 +54,46 @@ const MenuOption = ({
   };
 
   return (
-    <div className="menu-option" onMouseEnter={handleMouseEnter}>
+    <div
+      className="menu-option"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       {
-        <label style={{ color: "rgb(245,245,245)", width: "fit-content" }}>
+        <label
+          style={{
+            color: "rgb(245,245,245)",
+            width: "fit-content",
+            padding: "2.5rem 0",
+          }}
+        >
           {optionName}
         </label>
       }
       {popUpState && optionValues.length ? (
         <div className="sub-menu" style={subMenuCustomStyle}>
           {optionValues.map((subOption, index) => (
-            <a href={subOption.url} key={index} style={aTagCustomStyle}>
-              {subOption.name}
-            </a>
+            <div
+              className="sub-menu-option"
+              onClick={() => openInNewTab(subOption.url)}
+              style={{
+                width: "100%",
+                margin: "2px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "2px",
+              }}
+            >
+              {id == 1 && (
+                <div style={{ width: "fit-content", margin: "0 .5rem" }}>
+                  {subOption.svgCode}
+                </div>
+              )}
+              <a href={subOption.url} key={index} style={aTagCustomStyle}>
+                {subOption.name}
+              </a>
+            </div>
           ))}
         </div>
       ) : (
