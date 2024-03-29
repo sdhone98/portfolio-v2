@@ -74,6 +74,7 @@ const MenuOption = ({
         <div className="sub-menu" style={subMenuCustomStyle}>
           {optionValues.map((subOption, index) => (
             <div
+              key={index}
               className="sub-menu-option"
               onClick={() => openInNewTab(subOption.url)}
               style={{

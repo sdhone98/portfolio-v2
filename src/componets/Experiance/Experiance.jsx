@@ -8,18 +8,28 @@ const Experiance = () => {
     "A well-rounded concluding paragraph summarising all the points is crucial",
   ];
 
+  const containerCustomStyle = {
+    width: "60%",
+    height: "fit-content",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
   const taskList = ["Task 1", "Task 2", "Task 3", "Task 4"];
   return (
     <div className="experiance-main">
       <h2>Test</h2>
 
-      <div className="container">
+      <div className="container" style={containerCustomStyle}>
         <div className="vertical-line">
           <div className="circle"></div>
         </div>
         <div className="info">
-          {taskList.map((project) => (
+          {taskList.map((project, index) => (
             <ProjectCard
+              key={index}
               projectName="Task 1"
               position="Sub task"
               projectDuration="Description"
