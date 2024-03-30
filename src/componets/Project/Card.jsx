@@ -1,9 +1,12 @@
 import "./Card.scss";
-const Card = ({ projectName, projectUrl, tectStack }) => {
+const Card = ({ projectName, projectUrl, tectStack, projectImageName }) => {
+  const img = "/src/resources/project_images/" + projectImageName;
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
   };
+
+
 
   const cardCustomStyle = {
     width: "250px",
@@ -26,18 +29,20 @@ const Card = ({ projectName, projectUrl, tectStack }) => {
   const pCustomStyle = {
     marginBottom: "1rem",
     fontSize: ".8rem",
-    fontWeight: "600",
+    fontWeight: "200",
   };
 
   const h4CustomStyle = {
     margin: "1rem 0",
     fontSize: "1.8rem",
     fontWeight: "600",
+    textAlign: "center",
+    lineHeight: "1"
   };
   return (
     <div className="card" style={cardCustomStyle}>
       <img
-        src="https://images.tokopedia.net/img/cache/900/VqbcmM/2023/5/29/de6aba0b-03a7-4224-b000-90648d86264c.jpg"
+        src={img}
         alt="image"
         style={imgCustomStyle}
       ></img>
@@ -46,7 +51,7 @@ const Card = ({ projectName, projectUrl, tectStack }) => {
         <p style={pCustomStyle}>{tectStack}</p>
       </i>
       <div className="action">
-        <button onClick={() => openInNewTab(projectUrl)}>Click 1</button>
+        <button onClick={() => openInNewTab(projectUrl)}>GitHub</button>
       </div>
     </div>
   );

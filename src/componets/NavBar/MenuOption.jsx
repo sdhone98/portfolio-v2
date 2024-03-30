@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./MenuOption.scss";
 const MenuOption = ({
   id,
@@ -6,7 +6,42 @@ const MenuOption = ({
   optionValues,
   parentState,
   setParentState,
+
 }) => {
+
+
+
+  const scrollToSection = (name, ref) => {
+    console.log("REF == > ", name, ref, " : ===== : ", ref.current);
+    if (ref && ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const switchTab = (name) => {
+    set
+    // switch (name) {
+    //   case "Home":
+    //     console.log("TAB ========> ", name);
+    //     scrollToSection(homeRef)
+    //     break;
+    //   case "Experiance":
+    //     console.log("TAB ========> ", name);
+    //     break;
+    //   case "Projects":
+    //     console.log("TAB ========> ", name);
+    //     break;
+    //   case "Skills":
+    //     console.log("TAB ========> ", name);
+    //     break;
+    //   case "Contact Me":
+    //     console.log("TAB ========> ", name);
+    //     break;
+    //   default:
+    //     break;
+    // }
+  };
+
   const [popUpState, setPopUpState] = useState(true);
 
   const handleMouseEnter = () => {
@@ -76,7 +111,7 @@ const MenuOption = ({
             <div
               key={index}
               className="sub-menu-option"
-              onClick={() => openInNewTab(subOption.url)}
+              onClick={() => scrollToSection(subOption.name,event)}
               style={{
                 width: "100%",
                 margin: "2px",

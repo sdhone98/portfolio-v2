@@ -20,7 +20,8 @@ const Experiance = () => {
   const taskList = ["Task 1", "Task 2", "Task 3", "Task 4"];
   return (
     <div className="experiance-main">
-      <h2>Test</h2>
+      <p>Explore My Journey</p>
+      <h2>Experience</h2>
 
       <div className="container" style={containerCustomStyle}>
         <div className="vertical-line">

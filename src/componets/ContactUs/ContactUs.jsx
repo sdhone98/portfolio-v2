@@ -77,7 +77,7 @@ const ConatctUs = () => {
             name="message"
             placeholder="message"
           ></textarea>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Send" />
         </form>
       </div>
     </div>

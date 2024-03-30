@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "name": "Expense Tracker",
+      "date": "Jan 2024",
+      "url": "https://github.com/sdhone98/ExpenseTracker",
+      "techStack": ["React", "JavaScript", "SCSS"],
+      "imageBackground": "ExpenseTracker.jpg"
+    },
+    {
+      "name": "To Do List",
+      "date": "Jul 2023",
+      "url": "https://github.com/sdhone98/To-Do-List",
+      "techStack": ["React", "TypeScript", "CSS"],
+      "imageBackground": "ToDoList.jpg"
+    },
+    {
+      "name": "Quiz",
+      "date": "Aug 2023",
+      "url": "https://github.com/SagarSankeySolutions/React-Quiz",
+      "techStack": ["React", "JavaScript", "SCSS"],
+      "imageBackground": "Quiz.jpg"
+    },
+    {
+      "name": "Spotify Song Downloder",
+      "date": "Nov 2023",
+      "url": "https://github.com/sdhone98/SpotifyDownloder",
+      "techStack": ["Python"],
+      "imageBackground": "SpotifySongDownloader.jpg"
+    },
+    {
+      "name": "Send WhatsApp MSG",
+      "date": "Oct 2023",
+      "url": "https://github.com/sdhone98/WhatsAppMessage",
+      "techStack": ["Android", "Java"],
+      "imageBackground": "WhatsAppMsg.jpg"
+    },
+    {
+      "name": "Library Management",
+      "date": "Dec 2023",
+      "url": "https://github.com/sdhone98/LibraryManagement",
+      "techStack": ["Kotlin"],
+      "imageBackground": "LibraryManagement.jpg"
+    },
+    {
+      "name": "Portfolio",
+      "date": "Mar 2024",
+      "url": "https://github.com/sdhone98/portfolio-v2",
+      "techStack": ["React", "JavaScript", "SCSS", "HTML", "CSS"],
+      "imageBackground": "Portfolio.jpg"
+    },
+    {
+      "name": "Product Configurator",
+      "date": "Oct 2022",
+      "url": "https://github.com/sdhone98/Product-Configurator",
+      "techStack": ["Angular", "TypeScript", "HTML", "CSS"],
+      "imageBackground": "ProductConfigurator.jpg"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./NavBar.scss";
 import MenuOption from "./MenuOption";
-const NavBar = () => {
+const NavBar = ({ homeRef, contactRef, projectRef, experienceRef}) => {
+
   const [parentState, setParentState] = useState(false);
 
   const data = [

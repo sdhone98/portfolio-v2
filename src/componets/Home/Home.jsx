@@ -14,22 +14,22 @@ const Home = () => {
   return (
     <div className="home-main" style={{ background: backgroundPattern }}>
       <div className="container">
-        <p style={{ color: "rgb(255,255,255)" }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry
+        <p style={{ color: "rgb(255,255,255)", fontFamily:"Source Code Pro", fontSize: "1rem", fontWeight: "200"}}>
+          Hello, I'm Sagar. A passionate Software Developer.
         </p>
         <h1
           style={{
             padding: "1rem 0",
             color: "rgb(255,255,255)",
-            fontSize: "rem",
+            fontSize: "3rem",
+            marginBottom: "3rem"
           }}
         >
-          Lorem Ipsum
+          Full Stack Developer, But I lean towards Backend Development
         </h1>
         <div className="btn-container">
-          <button className="first-btn">Okay</button>
-          <button className="second-btn">Cancel</button>
+          <button className="first-btn">Download CV</button>
+          <button className="second-btn">Contact Me</button>
         </div>
       </div>
     </div>

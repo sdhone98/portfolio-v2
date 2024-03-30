@@ -1,4 +1,4 @@
-
+import { useRef } from "react";
 import NavBar from "./componets/NavBar/NavBar";
 import Home from "./componets/Home/Home";
 import Experiance from "./componets/Experiance/Experiance";
@@ -8,15 +8,23 @@ import "./App.css";
 import Skills from "./componets/Skills/Skills";
 
 function App() {
-
+  const homeRef = useRef(null);
+  const contactRef = useRef(null);
+  const projectRef = useRef(null);
+  const experienceRef = useRef(null);
   return (
     <>
-      <NavBar />
-      <Skills/>
+      <NavBar
+        homeRef={homeRef}
+        contactRef={contactRef}
+        projectRef={projectRef}
+        experienceRef={experienceRef}
+      />
       <Home />
       <Experiance />
       <Project />
-      <ConatctUs/>
+      <Skills />
+      <ConatctUs />
     </>
   );
 }
