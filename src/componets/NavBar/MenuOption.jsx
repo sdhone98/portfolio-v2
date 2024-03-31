@@ -6,20 +6,28 @@ const MenuOption = ({
   optionValues,
   parentState,
   setParentState,
-
 }) => {
+  const [isDarkMode, setDarkMode] = useState(true);
 
+  const toggleSwitchMode = (event) => {
+    console.log("EVENET ===> ", event.target.tagName.tolowerCase());
 
+    if (event.target.tagName.tolowerCase() == '')
+    setDarkMode((isDarkMode) => !isDarkMode);
+  };
+
+  useEffect(() => {
+    console.log("NAV OPTION CLICK ==> ", id, isDarkMode);
+  }, [isDarkMode]);
 
   const scrollToSection = (name, ref) => {
-    console.log("REF == > ", name, ref, " : ===== : ", ref.current);
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   const switchTab = (name) => {
-    set
+    set;
     // switch (name) {
     //   case "Home":
     //     console.log("TAB ========> ", name);
@@ -58,13 +66,18 @@ const MenuOption = ({
     !parentState && setPopUpState(false);
   }, [parentState]);
 
-  const openInNewTab = (url) => {
+  // const openInNewTab = (url) => {
+  //   const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  //   if (newWindow) newWindow.opener = url;
+  // };
+
+  const openInNewTabNEW = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
   };
 
   const subMenuCustomStyle = {
-    marginTop: "4.9rem",
+    marginTop: "2.5rem",
     padding: " .5rem",
     position: "absolute",
     zIndex: "99",
@@ -90,11 +103,13 @@ const MenuOption = ({
 
   return (
     <div
+      id={id}
       className="menu-option"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => toggleSwitchMode(event)}
     >
-      {
+      {/* {
         <label
           style={{
             color: "rgb(245,245,245)",
@@ -104,14 +119,15 @@ const MenuOption = ({
         >
           {optionName}
         </label>
-      }
+      } */}
+      {optionName}
       {popUpState && optionValues.length ? (
         <div className="sub-menu" style={subMenuCustomStyle}>
           {optionValues.map((subOption, index) => (
             <div
               key={index}
               className="sub-menu-option"
-              onClick={() => scrollToSection(subOption.name,event)}
+              onClick={() => openInNewTabNEW(optionValues.url)}
               style={{
                 width: "100%",
                 margin: "2px",

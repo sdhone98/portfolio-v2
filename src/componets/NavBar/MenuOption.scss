@@ -1,11 +1,13 @@
 .menu-option {
-  width: 5rem;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0.5rem;
   font-size: 1.1rem;
   font-weight: 300;
+  padding: 2.5rem 0;
+  
 
   label:hover {
     cursor: pointer;
@@ -20,5 +22,12 @@
       text-decoration: none;
       transition: all 600ms ease;
     }
+  }
+}
+
+.menu-option:hover {
+  // background: red;
+  path {
+    fill: blue;
   }
 }
