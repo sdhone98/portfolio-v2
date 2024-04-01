@@ -69,13 +69,13 @@ const ConatctUs = () => {
             type="email"
             id="email"
             name="user_email"
-            placeholder="email@gmail.com"
+            placeholder="email00@gmail.com"
           />
           <label htmlFor="message">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="message"
+            placeholder="Message"
           ></textarea>
           <input type="submit" value="Send" />
         </form>

@@ -7,7 +7,11 @@
   font-size: 1.1rem;
   font-weight: 300;
   padding: 2.5rem 0;
-  
+
+  width: fit-content;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   label:hover {
     cursor: pointer;
@@ -26,8 +30,5 @@
 }
 
 .menu-option:hover {
-  // background: red;
-  path {
-    fill: blue;
-  }
+  cursor: pointer;
 }

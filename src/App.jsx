@@ -6,6 +6,7 @@ import Project from "./componets/Project/Project";
 import ConatctUs from "./componets/ContactUs/ContactUs";
 import "./App.css";
 import Skills from "./componets/Skills/Skills";
+import Footer from "./componets/Footer/Footer";
 
 function App() {
   const homeRef = useRef(null);
@@ -20,11 +21,12 @@ function App() {
         projectRef={projectRef}
         experienceRef={experienceRef}
       />
-      <Home />
+      {/* <Home /> */}
       <Experiance />
       <Project />
       <Skills />
       <ConatctUs />
+      <Footer/>
     </>
   );
 }

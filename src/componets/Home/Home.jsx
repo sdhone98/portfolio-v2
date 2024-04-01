@@ -22,7 +22,8 @@ const Home = () => {
             padding: "1rem 0",
             color: "rgb(255,255,255)",
             fontSize: "3rem",
-            marginBottom: "3rem"
+            marginBottom: "3rem",
+            textAlign: "center"
           }}
         >
           Full Stack Developer, But I lean towards Backend Development
