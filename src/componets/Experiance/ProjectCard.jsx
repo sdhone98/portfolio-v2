@@ -4,6 +4,7 @@ const ProjectCard = ({
   position,
   projectDuration,
   description,
+  correntMode
 }) => {
   const msg = [
     "An essay should have a structure like an introduction, body, and conclusion",

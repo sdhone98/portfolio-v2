@@ -1,7 +1,7 @@
 import "./Project.scss";
 import Data from "../../resources/information.json";
 import Card from "./Card";
-const Project = () => {
+const Project = ({ isDarkModeOn }) => {
   return (
     <div className="project-main">
       <p>Browse My Recent</p>
@@ -14,14 +14,9 @@ const Project = () => {
             projectUrl={project.url}
             tectStack={project.techStack.join(" ")}
             projectImageName={project.imageBackground}
+            currentMode={isDarkModeOn}
           />
         ))}
-
-        {/* <Card projectName="Task 1" projectUrl="#" tectStack="Option 1 Option 2 Option 3"/>
-        <Card projectName="Task 1" projectUrl="#" tectStack="Option 1 Option 2 Option 3"/>
-        <Card projectName="Task 1" projectUrl="#" tectStack="Option 1 Option 2 Option 3"/>
-        <Card projectName="Task 1" projectUrl="#" tectStack="Option 1 Option 2 Option 3"/>
-        <Card projectName="Task 1" projectUrl="#" tectStack="Option 1 Option 2 Option 3"/> */}
       </div>
     </div>
   );

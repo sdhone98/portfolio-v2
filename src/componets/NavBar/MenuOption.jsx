@@ -6,8 +6,9 @@ const MenuOption = ({
   optionValues,
   parentState,
   setParentState,
+  test
 }) => {
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(true);
 
   const moonSvg = (
     <svg
@@ -24,7 +25,6 @@ const MenuOption = ({
   );
 
   const toggleSwitchMode = (event) => {
-    // console.log("EVENET ===> ", event.target.tagName);
 
     if (id == 2) {
       setDarkMode((isDarkMode) => !isDarkMode);
@@ -32,7 +32,7 @@ const MenuOption = ({
   };
 
   useEffect(() => {
-    // console.log("NAV OPTION CLICK ==> ", id, isDarkMode);
+    test(isDarkMode);
   }, [isDarkMode]);
 
   const scrollToSection = (name, ref) => {

@@ -27,7 +27,7 @@
     }
 
     .btn-container {
-      width: 20%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -43,6 +43,7 @@
       }
 
       button {
+        width: 10rem;
         appearance: button;
         backface-visibility: hidden;
         border-radius: 6px;

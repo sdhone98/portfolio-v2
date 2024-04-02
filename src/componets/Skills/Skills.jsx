@@ -1,14 +1,30 @@
 import "./Skills.scss";
-const Skills = () => {
+const Skills = ({ isDarkModeOn }) => {
+  const RBG_BLACK_COLOR = `rgb(19,19,19)`;
+  const RBG_WHITE_COLOR = `rgb(245,245,245)`;
+  const RBGA_BLACK_COLOR = `rgba(19,19,19,.3)`;
+  const RBGA_WHITE_COLOR = `rgba(245,245,245,.3)`;
+
   const pathComponet = <path d="M12 6v12m6-6H6"></path>;
   const plusIconSVGDetails = {
-    color: "rgb(245,245,245)",
+    color: `${isDarkModeOn ? RBG_WHITE_COLOR : RBG_BLACK_COLOR}`,
     strokeWidth: "2",
     viewBox: "0 0 24 24",
     fill: "none",
   };
 
-  const data = ["One", "Two", "Three", "Four", "Five", "Six", "Seven"];
+  const circleExpandStyle = {
+    position: "relative",
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
+
+
   const data_1 = [
     {
       name: "Java",
@@ -173,8 +189,19 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
       }}
     >
       <p>Explore My Skills</p>
-      <h2 style={{color:"rgb(245,245,245)"}}>Skkils</h2>
-      <div style={{width: "70%", height: "fit-content", display: "flex", flexWrap: "wrap", gap: "2rem", alignItems: "center", justifyContent: "center", margin: "2rem"}}>
+      <h2>Skkils</h2>
+      <div
+        style={{
+          width: "70%",
+          height: "fit-content",
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "2rem",
+          alignItems: "center",
+          justifyContent: "center",
+          margin: "2rem",
+        }}
+      >
         {data_1.map((skill, index) => (
           <a
             className="card"
@@ -189,8 +216,9 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
               width: "300px",
               maxWidth: "100%",
               height: "200px",
-              color: "white",
-              border: ".5px dashed rgba(245,245,245,.3)",
+              border: `.5px solid ${
+                isDarkModeOn ? RBGA_WHITE_COLOR : RBGA_BLACK_COLOR
+              }`,
             }}
           >
             <svg
@@ -199,7 +227,7 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
                 position: "absolute",
                 top: "-0.62rem",
                 left: "-0.65rem",
-                color: "#000000",
+                color: "#ffffff",
               }}
               xmlns="http://www.w3.org/2000/svg"
               fill={plusIconSVGDetails.fill}
@@ -272,7 +300,7 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
                 borderRadius: "1.5rem",
               }}
             >
-              <div className="circle-expand">
+              <div className="circle-expand" style={circleExpandStyle}>
                 <h2 style={{ fontSize: "2rem" }}>{skill.name}</h2>
                 {skill.svgIcon}
               </div>

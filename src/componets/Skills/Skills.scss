@@ -1,4 +1,4 @@
-$short-ease: 300ms ease-in-out;
+$short-ease: 200ms ease-in-out;
 
 .skills-main {
   width: 100%;
@@ -10,13 +10,13 @@ $short-ease: 300ms ease-in-out;
   padding-bottom: 3rem;
   box-sizing: border-box;
 
+
   h2,
   p {
     width: fit-content;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: rgb(245, 245, 245);
   }
 
   p {
@@ -29,10 +29,6 @@ $short-ease: 300ms ease-in-out;
   }
 
   .card {
-    a {
-      background: pink;
-    }
-
     .top-left,
     .top-right,
     .bottom-left,
@@ -57,51 +53,15 @@ $short-ease: 300ms ease-in-out;
         justify-content: center;
         align-items: center;
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          right: 50%;
-          width: 1px;
-          height: 1px;
-          border-radius: 50%;
-          z-index: -1;
-          transition: all $short-ease;
-        }
-        &:hover::before {
-          top: 0px;
-          right: 0px;
-          width: 100%;
-          height: 100%;
-          border-radius: 0;
-          background: rgba(245, 245, 245, 1);
-        }
-
         h2,
         svg {
           transition: all $short-ease;
-        }
-
-        // https://cdn-images-1.medium.com/max/2000/1*KeG3D_6oirsqBJndzVlqEA.gif
-      }
-
-      .circle-expand:hover {
-        h2 {
-          color: rgb(19, 19, 19);
-        }
-        path {
-          fill: rgb(19, 19, 19);
         }
       }
 
       h2 {
         width: fit-content;
       }
-    }
-
-    .info:hover {
-      width: 100%;
-      height: 100%;
     }
 
     svg {

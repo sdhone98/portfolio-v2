@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./NavBar.scss";
 import MenuOption from "./MenuOption";
-const NavBar = ({ homeRef, contactRef, projectRef, experienceRef }) => {
+const NavBar = ({ homeRef, contactRef, projectRef, experienceRef,toggleMode_}) => {
   const [parentState, setParentState] = useState(false);
+  console.log()
 
   const svgStrokeColor = "rgb(245,245,245)";
 
@@ -126,6 +127,7 @@ const NavBar = ({ homeRef, contactRef, projectRef, experienceRef }) => {
           optionValues={option.values}
           parentState={parentState}
           setParentState={setParentState}
+          test={toggleMode_}
         />
       ))}
     </div>
