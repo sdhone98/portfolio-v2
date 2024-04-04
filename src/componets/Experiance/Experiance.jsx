@@ -10,8 +10,6 @@ const Experiance = ({isDarkModeOn}) => {
   ];
 
   const containerCustomStyle = {
-    width: "60%",
-    height: "fit-content",
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",

@@ -26,17 +26,12 @@ const Home = ({ isDarkModeOn, contactRef }) => {
         <p
           style={{
             fontFamily: "Source Code Pro",
-            fontSize: "1rem",
-            fontWeight: "300",
           }}
         >
           {msg_1}
         </p>
         <h1
           style={{
-            padding: "1rem 0",
-            fontSize: "3rem",
-            marginBottom: "3rem",
             textAlign: "center",
           }}
         >
