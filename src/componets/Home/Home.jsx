@@ -1,6 +1,6 @@
 import "./Home.scss";
 ("./colors");
-const Home = ({ isDarkModeOn }) => {
+const Home = ({ isDarkModeOn, contactRef }) => {
   const msg = "Full Stack Developer, But I lean towards Backend Development";
   const msgg = "React Context is a way to manage state globally.";
   const msg_1 = "Hello, I'm Sagar. A passionate Software Developer.";
@@ -16,6 +16,10 @@ const Home = ({ isDarkModeOn }) => {
       isDarkModeOn ? "rgb(19,19,19)" : "rgb(245,245,245)"
     } 60%), 
     url('data:image/svg+xml,${svgFile}'), 100%`;
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="home-main" style={{ background: backgroundPattern }}>
       <div className="container">
@@ -40,7 +44,12 @@ const Home = ({ isDarkModeOn }) => {
         </h1>
         <div className="btn-container">
           <button className="first-btn">Download CV</button>
-          <button className="second-btn">Contact Me</button>
+          <button
+            className="second-btn"
+            onClick={() => scrollToSection(contactRef)}
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </div>

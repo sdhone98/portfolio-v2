@@ -85,7 +85,6 @@ const ConatctUs = ({ isDarkModeOn }) => {
   const submitCustomStyle = {
     width: "10%",
     marginTop: "1rem",
-    color: "rgb(245, 245, 245)",
     backgroundColor: `${isDarkModeOn ? RBG_WHITE_COLOR : RBG_BLACK_COLOR}`,
     transition: "all 300ms ease",
     color: ` ${isDarkModeOn ? RBG_BLACK_COLOR : RBG_WHITE_COLOR}`,

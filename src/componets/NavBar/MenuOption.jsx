@@ -6,7 +6,7 @@ const MenuOption = ({
   optionValues,
   parentState,
   setParentState,
-  test
+  test,
 }) => {
   const [isDarkMode, setDarkMode] = useState(true);
 
@@ -24,8 +24,7 @@ const MenuOption = ({
     </svg>
   );
 
-  const toggleSwitchMode = (event) => {
-
+  const toggleSwitchMode = () => {
     if (id == 2) {
       setDarkMode((isDarkMode) => !isDarkMode);
     }
@@ -35,11 +34,6 @@ const MenuOption = ({
     test(isDarkMode);
   }, [isDarkMode]);
 
-  const scrollToSection = (name, ref) => {
-    if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
   const [popUpState, setPopUpState] = useState(false);
 
   const handleMouseEnter = () => {
@@ -51,9 +45,7 @@ const MenuOption = ({
   };
 
   useEffect(() => {
-    parentState && popUpState && setPopUpState(false);
-
-    !parentState && setPopUpState(false);
+    (parentState && popUpState && setPopUpState(false)) || (!parentState && setPopUpState(false))
   }, [parentState]);
 
   const openInNewTabNEW = (url) => {
@@ -92,7 +84,7 @@ const MenuOption = ({
       className="menu-option"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      onClick={() => toggleSwitchMode(event)}
+      onClick={() => toggleSwitchMode()}
       style={{ color: "rgb(245,245,245)" }}
     >
       {id != 2 ? optionName : isDarkMode ? optionName[0] : optionName[1]}
@@ -102,7 +94,7 @@ const MenuOption = ({
             <div
               key={index}
               className="sub-menu-option"
-              onClick={() => openInNewTabNEW(optionValues.url)}
+              onClick={ subOption.func}
               style={{
                 width: "100%",
                 margin: "2px",
@@ -117,9 +109,9 @@ const MenuOption = ({
                   {subOption.svgCode}
                 </div>
               )}
-              <a href={subOption.url} key={index} style={aTagCustomStyle}>
+              <span key={index} style={aTagCustomStyle} onClick={ () => id == 1 && openInNewTabNEW(subOption.url)}>
                 {subOption.name}
-              </a>
+              </span>
             </div>
           ))}
         </div>
