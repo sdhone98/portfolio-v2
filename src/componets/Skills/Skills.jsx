@@ -23,7 +23,10 @@ const Skills = ({ isDarkModeOn }) => {
     alignItems: "center",
   };
 
-
+  const openWebpage = (url) => {
+    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+    if (newWindow) newWindow.opener = null;
+  };
 
   const data_1 = [
     {
@@ -206,6 +209,7 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
           <a
             className="card"
             key={index}
+            onClick={() => openWebpage(skill.url)}
             style={{
               display: "flex",
               justifyContent: "center",
@@ -219,6 +223,7 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
               border: `.5px solid ${
                 isDarkModeOn ? RBGA_WHITE_COLOR : RBGA_BLACK_COLOR
               }`,
+              color: "inherit",
             }}
           >
             <svg

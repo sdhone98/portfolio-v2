@@ -1,4 +1,38 @@
 {
+  "experiance": [
+    {
+      "name": "Product Configurator ( Tata Motors )",
+      "designation": "Solution Analyst",
+      "duration": "Dec 2022 - Current",
+      "description": [
+        "Developed a Product Configurator solution for Tata Motors to adopt new automobile IPMS 4.0 standards.",
+        "Utilized technology to create a recipe for manufacturing cars, adhering to standardized processes.",
+        "Implemented segregation of each part as it occurs on the actual assembly line.",
+        "Generated Bill of Materials (BOM) with detailed data on parts required for specific car models.",
+        "Sequenced each manufacturing process based on BOM to minimize assembly line issues.",
+        "Designed unique configurations for each station in the assembly line, ensuring smooth operations.",
+        "Significantly increased production quantity and reduced errors and line stoppage rates.",
+        "Centralized configuration management for all Tata Motors plants, enabling seamless replication across facilities.",
+        "Provided a one-time configuration setup, allowing repeated use across multiple manufacturing cycles."
+      ]
+    },
+    {
+      "name": "Corporate Governance ( NSE India )",
+      "designation": "Solution Analyst",
+      "duration": "Sep 2022 - Nov 2022",
+      "description": [
+        "Led Corporate Governance overhaul at NSE India, emphasizing transparency and accountability.",
+        "Implemented governance frameworks adhering to regulations and international standards.",
+        "Developed and enforced policies to uphold ethics, mitigate risks, and ensure compliance.",
+        "Defined clear roles for effective decision-making and oversight.",
+        "Conducted audits to assess governance practices and ensure compliance.",
+        "Cultivated integrity and accountability through targeted training and communication.",
+        "Enhanced investor confidence and market integrity through robust governance.",
+        "Aligned corporate objectives with stakeholder interests for sustainability.",
+        "Recognized for excellence in governance, bolstering NSE India's reputation."
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Expense Tracker",

@@ -1,17 +1,12 @@
 import "./Experiance.scss";
 import ProjectCard from "./ProjectCard";
+import data from "../../resources/information.json"
 const Experiance = ({isDarkModeOn}) => {
-
-  const msg = [
-    "An essay should have a structure like an introduction, body, and conclusion",
-    "Kids can talk about the pen in general and its history, origin, and evolution",
-    "They can add an idea of their favourite pen, its utility, and its impact and importance in society",
-    "A well-rounded concluding paragraph summarising all the points is crucial",
-  ];
+  const Data = data.experiance
 
   const containerCustomStyle = {
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   };
@@ -19,28 +14,26 @@ const Experiance = ({isDarkModeOn}) => {
   const RBG_BLACK_COLOR = `rgb(19,19,19)`;
   const RBG_WHITE_COLOR = `rgb(245,245,245)`;
 
-  const taskList = ["Task 1", "Task 2", "Task 3", "Task 4"];
   return (
     <div className="experiance-main">
       <p>Explore My Journey</p>
       <h2>Experience</h2>
 
       <div className="container" style={containerCustomStyle}>
-        <div className="vertical-line" style={{background: `${isDarkModeOn? RBG_WHITE_COLOR:RBG_BLACK_COLOR}`}}>
+        {/* <div className="vertical-line" style={{background: `${isDarkModeOn? RBG_WHITE_COLOR:RBG_BLACK_COLOR}`}}>
           <div className="circle" style={{background: isDarkModeOn? RBG_WHITE_COLOR:RBG_BLACK_COLOR}}></div>
-        </div>
-        <div className="info">
-          {taskList.map((project, index) => (
+        </div> */}
+        {Data.map((project, index) => (
             <ProjectCard
+              id={index}
               key={index}
-              projectName="Task 1"
-              position="Sub task"
-              projectDuration="Description"
-              description={msg}
+              projectName={project.name}
+              position={project.designation}
+              projectDuration={project.duration}
+              description={project.description}
               correntMode={isDarkModeOn}
             />
           ))}
-        </div>
       </div>
     </div>
   );

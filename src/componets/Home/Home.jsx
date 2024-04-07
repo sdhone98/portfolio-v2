@@ -1,11 +1,9 @@
 import "./Home.scss";
+import CV from "../../resources/SagarDhone.pdf";
 ("./colors");
 const Home = ({ isDarkModeOn, contactRef }) => {
   const msg = "Full Stack Developer, But I lean towards Backend Development";
-  const msgg = "React Context is a way to manage state globally.";
   const msg_1 = "Hello, I'm Sagar. A passionate Software Developer.";
-  const msg_11 = "Lorem Ipmsem.";
-  const color = "232, 252, 255";
 
   const svgFile = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><circle r="2" cx="0" cy="0" fill="${
     isDarkModeOn ? "rgba(245,245,245,.3)" : "rgb(19,19,19,.5)"
@@ -19,6 +17,15 @@ const Home = ({ isDarkModeOn, contactRef }) => {
 
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "Sagar Dhone.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
   return (
     <div className="home-main" style={{ background: backgroundPattern }}>
@@ -35,10 +42,12 @@ const Home = ({ isDarkModeOn, contactRef }) => {
             textAlign: "center",
           }}
         >
-          {msgg}
+          {msg}
         </h1>
         <div className="btn-container">
-          <button className="first-btn">Download CV</button>
+          <button className="first-btn" onClick={() => downloadCV()}>
+            Download CV
+          </button>
           <button
             className="second-btn"
             onClick={() => scrollToSection(contactRef)}
