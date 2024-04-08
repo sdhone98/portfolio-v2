@@ -20,9 +20,6 @@ const Experiance = ({isDarkModeOn}) => {
       <h2>Experience</h2>
 
       <div className="container" style={containerCustomStyle}>
-        {/* <div className="vertical-line" style={{background: `${isDarkModeOn? RBG_WHITE_COLOR:RBG_BLACK_COLOR}`}}>
-          <div className="circle" style={{background: isDarkModeOn? RBG_WHITE_COLOR:RBG_BLACK_COLOR}}></div>
-        </div> */}
         {Data.map((project, index) => (
             <ProjectCard
               id={index}

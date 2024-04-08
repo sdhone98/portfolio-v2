@@ -47,8 +47,6 @@ const ConatctUs = ({ isDarkModeOn }) => {
   const RBGA_BLACK_COLOR = "rgba(19,19,19,.3)";
   const RBGA_WHITE_COLOR = "rgba(245,245,245,.3)";
 
-
-
   const textSelectionDisable = {
     WebkitUserSelect: "none",
     msUserSelect: "none",
@@ -56,11 +54,8 @@ const ConatctUs = ({ isDarkModeOn }) => {
   };
 
   const contactFormCustomStyle = {
-    width: "100%",
-    padding: "2rem",
     borderRadius: "15px",
     border: `.5px solid ${isDarkModeOn ? RBGA_WHITE_COLOR : RBGA_BLACK_COLOR}`,
-    fontFamily: "Inter",
   };
 
   const constLabelCustomStyle = {
@@ -69,74 +64,58 @@ const ConatctUs = ({ isDarkModeOn }) => {
   };
 
   const inputCustomStyle = {
-    width: "-webkit-fill-available",
-    padding: "0.6rem",
-    marginBottom: "1rem",
     color: `${isDarkModeOn ? RBG_WHITE_COLOR : RBG_BLACK_COLOR}`,
-    fontFamily: "Inter",
-    fontSize: "0.9rem",
     border: `.5px solid ${isDarkModeOn ? RBGA_WHITE_COLOR : RBGA_BLACK_COLOR}`,
     borderRadius: "4px",
-    resize: "none",
-    background: "transparent",
-    outline: "none",
   };
 
   const submitCustomStyle = {
-    width: "10%",
-    minWidth: "4rem",
-    marginTop: "1rem",
     backgroundColor: `${isDarkModeOn ? RBG_WHITE_COLOR : RBG_BLACK_COLOR}`,
-    transition: "all 300ms ease",
     color: ` ${isDarkModeOn ? RBG_BLACK_COLOR : RBG_WHITE_COLOR}`,
-    padding: "0.5rem",
-    border: "none",
     borderRadius: "4px",
-    cursor: "pointer",
-    fontFamily: "Inter",
-    fontWeight: "600",
   };
 
   return (
     <div
       className="contact-main"
-      style={{
-        ...textSelectionDisable,
-        width: "100%",
-        height: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      // style={{
+      //   ...textSelectionDisable,
+      //   width: "100%",
+      //   height: "100vh",
+      //   display: "flex",
+      //   flexDirection: "column",
+      //   justifyContent: "center",
+      //   alignItems: "center",
+      // }}
     >
       <div
         className="container"
-        style={{
-          width: "50%",
-          display: "flex",
-          padding: "2rem",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        // style={
+        //   {
+        //   width: "50%",
+        //   display: "flex",
+        //   padding: "2rem",
+        //   flexDirection: "column",
+        //   justifyContent: "center",
+        //   alignItems: "center",
+        // }}
       >
         <p
-          style={{
-            width: "fit-content",
-            fontSize: "1rem",
-            fontWeight: "300",
-          }}
+        // style={{
+        //   width: "fit-content",
+        //   fontSize: "1rem",
+        //   fontWeight: "300",
+        // }}
         >
           Get in Touch
         </p>
         <h2
-          style={{
-            width: "fit-content",
-            fontSize: "3rem",
-            marginBottom: "1rem",
-            padding: "1rem 0",
-          }}
+        // style={{
+        //   width: "fit-content",
+        //   fontSize: "3rem",
+        //   marginBottom: "1rem",
+        //   padding: "1rem 0",
+        // }}
         >
           Contact Me
         </h2>
@@ -148,7 +127,10 @@ const ConatctUs = ({ isDarkModeOn }) => {
           ref={formEl}
           id="form"
         >
-          <label style={constLabelCustomStyle} htmlFor="name">
+          <label
+            // style={constLabelCustomStyle}
+            htmlFor="name"
+          >
             Name
           </label>
           <input

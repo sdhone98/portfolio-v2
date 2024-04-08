@@ -8,20 +8,19 @@
   align-items: center;
   box-sizing: border-box;
 
+  .container {
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 0 2rem;
+  }
+
   @media screen and (min-width: 300px) and (max-width: 600px) {
     min-width: 300px;
     height: fit-content;
 
     .container {
+      width: 100%;
       min-width: 300px;
-      margin-top: 2rem;
-
-      .info {
-        min-width: 2;
-        height: fit-content;
-        margin-left: -1.28rem;
-        margin-top: 2rem;
-      }
     }
   }
 
@@ -31,16 +30,6 @@
 
     .container {
       width: 100%;
-      min-width: 601px;
-      margin-top: 2rem;
-
-      .info {
-        width: 100%;
-        min-width: 2;
-        height: 100%;
-        margin-left: -1.28rem;
-        margin-top: 2rem;
-      }
     }
   }
 
@@ -50,16 +39,6 @@
 
     .container {
       width: 80%;
-      min-width: 769px;
-      margin-top: 2rem;
-
-      .info {
-        width: 100%;
-        min-width: 2;
-        height: 100%;
-        margin-left: -1.28rem;
-        margin-top: 2rem;
-      }
     }
   }
   @media screen and (min-width: 993px) and (max-width: 1200px) {
@@ -67,17 +46,7 @@
     height: fit-content;
 
     .container {
-      width: 70%;
-      min-width: 993px;
-      margin-top: 2rem;
-
-      .info {
-        width: 90%;
-        min-width: 2;
-        height: 100%;
-        margin-left: -1.28rem;
-        margin-top: 2rem;
-      }
+      width: 60%;
     }
   }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
@@ -86,16 +55,6 @@
 
     .container {
       width: 60%;
-      min-width: 1200px;
-      margin-top: 2rem;
-
-      .info {
-        width: 80%;
-        min-width: 2;
-        height: 100%;
-        margin-left: -1.28rem;
-        margin-top: 2rem;
-      }
     }
   }
 
@@ -104,17 +63,7 @@
     height: fit-content;
 
     .container {
-      width: 60%;
-      min-width: 1200px;
-      margin-top: 2rem;
-
-      .info {
-        width: 80%;
-        min-width: 2;
-        height: 100%;
-        margin-left: -1.28rem;
-        margin-top: 2rem;
-      }
+      width: 50%;
     }
   }
 

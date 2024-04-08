@@ -13,6 +13,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: center;
   }
 
   p {
@@ -26,7 +27,50 @@
     padding: 1rem 0;
     font-size: 3rem;
     margin-bottom: 3rem;
+    font-family: 'Inter';
   }
+
+  
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px){
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px){
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px){
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+
+
+
+
+  
 
   .container {
     width: 100%;
@@ -93,6 +137,3 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  
-}

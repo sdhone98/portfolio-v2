@@ -1,0 +1,125 @@
+.contact-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .container {
+    width: 100%;
+    display: flex;
+    margin: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    p {
+      width: fit-content;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+
+    h2 {
+      width: fit-content;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      padding: 1rem 0;
+    }
+
+    .contact-form {
+      padding: 2rem;
+      font-family: "Inter";
+      box-sizing: border-box;
+      font-family: "Inter";
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        width: -webkit-fill-available;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        border-radius: 4px;
+        resize: none;
+        background: transparent;
+        outline: none;
+      }
+
+      textarea {
+        width: -webkit-fill-available;
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        font-family: "Inter";
+        font-size: 0.9rem;
+        border-radius: 4px;
+        resize: none;
+        background: transparent;
+        outline: none;
+        height: 8rem;
+      }
+
+      input[type="submit"] {
+        width: 10%;
+        min-width: 4rem;
+        margin-top: 1rem;
+        transition: "all 300ms ease";
+        padding: 0.5rem;
+        border: none;
+        border-radius: 4px;
+        cursor: "pointer";
+        font-family: "Inter";
+        font-weight: 600;
+      }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+      .contact-form {
+        width: 95%;
+        padding: 1rem;
+      }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 768px) {
+      .contact-form {
+        width: 80%;
+        padding: 1rem;
+      }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+      .contact-form {
+        width: 70%;
+        padding: 1.5rem;
+      }
+    }
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+      .contact-form {
+        width: 60%;
+        padding: 2rem;
+      }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+      .contact-form {
+        width: 50%;
+        padding: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .contact-form {
+          width: 50%;
+          padding: 2rem;
+        }
+      }
+  }
+}
