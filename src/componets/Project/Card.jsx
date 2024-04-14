@@ -66,7 +66,7 @@ const Card = ({
 
   return (
     <div className="card" style={cardCustomStyle}>
-      <img src={`/src/resources/project_images/${projectImageName}`} alt={projectName} style={imgCustomStyle}></img>
+      <img src={`/src/resources/${projectImageName}`} alt={projectName} style={imgCustomStyle}></img>
       <h4 style={h4CustomStyle}>{projectName}</h4>
       <i>
         <p style={pCustomStyle}>{tectStack}</p>
