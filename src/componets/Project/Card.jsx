@@ -7,7 +7,8 @@ const Card = ({
   projectImageName,
   currentMode,
 }) => {
-  const img = "../../../src/resources/project_images/" + projectImageName;
+  // const img = "/src/resources/project_images/" + projectImageName;
+  const img = "./../../" + projectImageName;
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -65,7 +66,7 @@ const Card = ({
 
   return (
     <div className="card" style={cardCustomStyle}>
-      <img src={img} alt="image" style={imgCustomStyle}></img>
+      <img src={`/src/resources/project_images/${projectImageName}`} alt={projectName} style={imgCustomStyle}></img>
       <h4 style={h4CustomStyle}>{projectName}</h4>
       <i>
         <p style={pCustomStyle}>{tectStack}</p>
