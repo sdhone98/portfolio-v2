@@ -7,7 +7,7 @@ const Card = ({
   projectImageName,
   currentMode,
 }) => {
-  const img = "/src/resources/project_images/" + projectImageName;
+  const img = "../../../src/resources/project_images/" + projectImageName;
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
