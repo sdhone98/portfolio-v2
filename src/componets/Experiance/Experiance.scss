@@ -9,14 +9,16 @@
   box-sizing: border-box;
 
   .container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     margin-top: 2rem;
-    padding: 0 2rem;
   }
 
   @media screen and (min-width: 300px) and (max-width: 600px) {
     min-width: 300px;
-    height: fit-content;
 
     .container {
       width: 100%;
@@ -26,7 +28,6 @@
 
   @media screen and (min-width: 601px) and (max-width: 768px) {
     min-width: 601px;
-    height: fit-content;
 
     .container {
       width: 100%;
@@ -35,7 +36,6 @@
 
   @media screen and (min-width: 769px) and (max-width: 992px) {
     min-width: 769;
-    height: fit-content;
 
     .container {
       width: 80%;
@@ -43,7 +43,6 @@
   }
   @media screen and (min-width: 993px) and (max-width: 1200px) {
     min-width: 993px;
-    height: fit-content;
 
     .container {
       width: 60%;
@@ -51,7 +50,6 @@
   }
   @media screen and (min-width: 1200px) and (max-width: 1440px) {
     min-width: 1200px;
-    height: fit-content;
 
     .container {
       width: 60%;
@@ -60,7 +58,6 @@
 
   @media screen and (min-width: 1440px) {
     min-width: 1200px;
-    height: fit-content;
 
     .container {
       width: 50%;
