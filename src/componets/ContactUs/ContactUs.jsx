@@ -76,49 +76,10 @@ const ConatctUs = ({ isDarkModeOn }) => {
   };
 
   return (
-    <div
-      className="contact-main"
-      // style={{
-      //   ...textSelectionDisable,
-      //   width: "100%",
-      //   height: "100vh",
-      //   display: "flex",
-      //   flexDirection: "column",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      // }}
-    >
-      <div
-        className="container"
-        // style={
-        //   {
-        //   width: "50%",
-        //   display: "flex",
-        //   padding: "2rem",
-        //   flexDirection: "column",
-        //   justifyContent: "center",
-        //   alignItems: "center",
-        // }}
-      >
-        <p
-        // style={{
-        //   width: "fit-content",
-        //   fontSize: "1rem",
-        //   fontWeight: "300",
-        // }}
-        >
-          Get in Touch
-        </p>
-        <h2
-        // style={{
-        //   width: "fit-content",
-        //   fontSize: "3rem",
-        //   marginBottom: "1rem",
-        //   padding: "1rem 0",
-        // }}
-        >
-          Contact Me
-        </h2>
+    <div className="contact-main">
+      <div className="container">
+        <p>Get in Touch</p>
+        <h2>Contact Me</h2>
 
         <form
           className="contact-form"
@@ -127,12 +88,7 @@ const ConatctUs = ({ isDarkModeOn }) => {
           ref={formEl}
           id="form"
         >
-          <label
-            // style={constLabelCustomStyle}
-            htmlFor="name"
-          >
-            Name
-          </label>
+          <label htmlFor="name">Name</label>
           <input
             style={inputCustomStyle}
             type="text"

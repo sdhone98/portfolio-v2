@@ -26,6 +26,7 @@ const Footer = ({ isDarkModeOn }) => {
     width: "fit-content",
     textAlign: "center",
     fontWeight: "400",
+    fontFamily: "Inter",
   };
   const h4TagCustomStyle = {
     width: "fit-content",
@@ -36,8 +37,6 @@ const Footer = ({ isDarkModeOn }) => {
   return (
     <div className="footer-main" style={divCustomStyle}>
       <p style={pTagCustomStyle}>Designed with {svgIcon} by Sagar Dhone</p>{" "}
-      {/* <h4 style={h4TagCustomStyle}>Sagar Dhone.</h4>
-      <p style={pTagCustomStyle}>All rights reserved</p> */}
       <br />
     </div>
   );

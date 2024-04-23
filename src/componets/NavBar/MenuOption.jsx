@@ -41,7 +41,7 @@ const MenuOption = ({
   };
 
   const handleMouseLeave = () => {
-    setPopUpState(false);
+    setPopUpState(true);
   };
 
   useEffect(() => {
@@ -76,6 +76,7 @@ const MenuOption = ({
     color: "rgb(245,245,245)",
     fontSize: "1rem",
     fontWeight: 200,
+    fontFamily: "Inter"
   };
 
   return (

@@ -17,6 +17,7 @@ $short-ease: 200ms ease-in-out;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: 'Inter';
   }
 
   p {
@@ -62,6 +63,8 @@ $short-ease: 200ms ease-in-out;
       h2 {
         color: inherit;
         width: fit-content;
+        font-family: 'Inter';
+        
       }
     }
 

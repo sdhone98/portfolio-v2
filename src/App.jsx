@@ -139,7 +139,6 @@ function App() {
   }, [darkModeOn]);
 
   const scrollToSection = (ref) => {
-    console.log("REF    === > ", ref)
     ref.current.scrollIntoView({ behavior: "smooth"});
 
   };

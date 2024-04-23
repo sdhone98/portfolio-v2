@@ -15,6 +15,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: 'Inter';
   }
 
   p {
@@ -28,7 +29,6 @@
   }
   .project-container {
     width: 70%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

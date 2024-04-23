@@ -29,8 +29,7 @@ const ProjectCard = ({
   ];
   return (
     <div className="project-info" style={{flexDirection: `${id/2 == 0? "row":"row-reverse"}`,
-    border: `1px dashed ${correntMode? "rgba(245,245,245,.3)" : "rgba(0,0,0,.3)"}`,
-    borderRadius:  `${id/2 == 0? "50px 0 50px 0":"0 50px 0 50px"}`}}>
+    border: `1px solid ${correntMode? "rgba(245,245,245,.3)" : "rgba(0,0,0,.3)"}`}}>
       <div className="img">
         {svgIcons[id]}
       </div>
