@@ -41,7 +41,7 @@ const MenuOption = ({
   };
 
   const handleMouseLeave = () => {
-    setPopUpState(true);
+    setPopUpState(false);
   };
 
   useEffect(() => {
