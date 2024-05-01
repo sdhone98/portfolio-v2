@@ -28,6 +28,7 @@ const Experiance = ({isDarkModeOn}) => {
               position={project.designation}
               projectDuration={project.duration}
               description={project.description}
+              imageName={project.imageName}
               correntMode={isDarkModeOn}
             />
           ))}
