@@ -12,7 +12,7 @@ This is my personal portfolio website built with React and SCSS. The website sho
 ## Demo
 
 You can access the live demo of this project [here](https://sagar-dhone-portfolio.netlify.app/).
-v1
+
 ## Screenshot
 
 ![Portfolio Screenshot](/public/project_images/sagar-dhone-portfolio.netlify.app_.png)
