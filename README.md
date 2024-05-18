@@ -15,7 +15,7 @@ You can access the live demo of this project [here](https://sagar-dhone-portfoli
 
 ## Screenshot
 
-![Portfolio Screenshot](/public/project_images/portfolio-full-screen-shot.png)
+![Portfolio Screenshot](/public/project_images/sagar-dhone-portfolio.netlify.app_.png)
 
 ## Technologies Used
 
