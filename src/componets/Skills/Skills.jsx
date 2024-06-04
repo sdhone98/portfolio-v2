@@ -192,7 +192,7 @@ q24 0 39 -11t15 -29t-15 -30q-11 -8 -43 -22l-20 -9q-48 -20 -70 -45q-26 -29 -26 -7
       }}
     >
       <p>Explore My Skills</p>
-      <h2>Skkils</h2>
+      <h2>Skills</h2>
       <div
         style={{
           width: "70%",

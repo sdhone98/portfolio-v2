@@ -1,0 +1,17 @@
+@import 'src/assets/partials/_fonts.scss';
+
+
+
+* {
+  width: 100%;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: "Inter";
+  line-height: 1.5;
+  font-weight: 400;
+}
