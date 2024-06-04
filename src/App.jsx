@@ -4,7 +4,7 @@ import Home from "./componets/Home/Home";
 import Experiance from "./componets/Experiance/Experiance";
 import Project from "./componets/Project/Project";
 import ConatctUs from "./componets/ContactUs/ContactUs";
-import "./App.css";
+import "./App.scss";
 import Skills from "./componets/Skills/Skills";
 import Footer from "./componets/Footer/Footer";
 
