@@ -58,18 +58,19 @@
       "imageBackground": "Quiz.jpg"
     },
     {
+      "name": "Wave Me",
+      "date": "May 2024",
+      "url": "https://github.com/sdhone98/whatsapp-message-web",
+      "hostUrl": "https://wa-msg.netlify.app",
+      "techStack": ["React", "JavaScript", "SCSS", "HTML", "CSS"],
+      "imageBackground": "WaMsg.jpg"
+    },
+    {
       "name": "Spotify Song Downloder",
       "date": "Nov 2023",
       "url": "https://github.com/sdhone98/SpotifyDownloder",
       "techStack": ["Python"],
       "imageBackground": "SpotifySongDownloader.jpg"
-    },
-    {
-      "name": "Send WhatsApp MSG",
-      "date": "Oct 2023",
-      "url": "https://github.com/sdhone98/WhatsAppMessage",
-      "techStack": ["Android", "Java"],
-      "imageBackground": "WhatsAppMsg.jpg"
     },
     {
       "name": "Library Management",
@@ -82,15 +83,16 @@
       "name": "Portfolio",
       "date": "Mar 2024",
       "url": "https://github.com/sdhone98/portfolio-v2",
+      "hostUrl": "https://sagar-dhone-portfolio.netlify.app",
       "techStack": ["React", "JavaScript", "SCSS", "HTML", "CSS"],
       "imageBackground": "Portfolio.jpg"
     },
     {
-      "name": "Product Configurator",
-      "date": "Oct 2022",
-      "url": "https://github.com/sdhone98/Product-Configurator",
-      "techStack": ["Angular", "TypeScript", "HTML", "CSS"],
-      "imageBackground": "ProductConfigurator.jpg"
+      "name": "Send WhatsApp MSG",
+      "date": "Oct 2023",
+      "url": "https://github.com/sdhone98/WhatsAppMessage",
+      "techStack": ["Android", "Java"],
+      "imageBackground": "WhatsAppMsg.jpg"
     }
   ]
 }

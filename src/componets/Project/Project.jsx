@@ -10,8 +10,10 @@ const Project = ({ isDarkModeOn }) => {
       <div className="project-container">
         {Data.projects.map((project) => (
           <Card
+            key={project.name}
             projectName={project.name}
             projectUrl={project.url}
+            projectHostUrl={project.hostUrl}
             tectStack={project.techStack.join(" ")}
             projectImageName={project.imageBackground}
             currentMode={isDarkModeOn}

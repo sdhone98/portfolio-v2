@@ -3,10 +3,12 @@ import "./Card.scss";
 const Card = ({
   projectName,
   projectUrl,
+  projectHostUrl,
   tectStack,
   projectImageName,
   currentMode,
 }) => {
+  console.log("hostUrl ===> ", projectName, projectHostUrl)
   // const img = "/src/resources/project_images/" + projectImageName;
   const img = "./../../" + projectImageName;
   const openInNewTab = (url) => {
@@ -79,6 +81,13 @@ const Card = ({
         >
           GitHub
         </button>
+        {projectHostUrl && <button
+        id="btn-2"
+          style={buttonCustomStyle}
+          onClick={() => openInNewTab(projectHostUrl)}
+        >
+          Visit
+        </button>}
       </div>
     </div>
   );

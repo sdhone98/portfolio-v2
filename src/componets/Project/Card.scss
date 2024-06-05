@@ -18,13 +18,14 @@
   .action {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
+    margin-top: auto;
 
     button {
       font-weight: 600;
       transition: all 300ms ease;
       padding: 1rem;
-      width: 8rem;
+      max-width: 8rem;
       border-radius: 2rem;
       font-size: 0.8rem;
       font-weight: 400;
