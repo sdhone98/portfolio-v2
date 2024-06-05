@@ -8,7 +8,6 @@ const Card = ({
   projectImageName,
   currentMode,
 }) => {
-  console.log("hostUrl ===> ", projectName, projectHostUrl)
   // const img = "/src/resources/project_images/" + projectImageName;
   const img = "./../../" + projectImageName;
   const openInNewTab = (url) => {

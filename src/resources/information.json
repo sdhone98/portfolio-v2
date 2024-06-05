@@ -40,6 +40,7 @@
       "name": "Expense Tracker",
       "date": "Jan 2024",
       "url": "https://github.com/sdhone98/ExpenseTracker",
+      "hostUrl": "https://sagar-expense-tracker.netlify.app/",
       "techStack": ["React", "JavaScript", "SCSS"],
       "imageBackground": "ExpenseTracker.jpg"
     },
