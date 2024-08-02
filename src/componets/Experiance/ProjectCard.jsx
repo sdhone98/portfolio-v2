@@ -10,7 +10,7 @@ const ProjectCard = ({
 }) => {
 
   return (
-    <div className="project-info" style={{flexDirection: `${id/2 == 0? "row":"row-reverse"}`,
+    <div className="project-info" style={{flexDirection: `${id%2 == 0? "row":"row-reverse"}`,
     border: `1px solid ${correntMode? "rgba(245,245,245,.3)" : "rgba(0,0,0,.3)"}`}}>
       <div className="img">
         <img src={`/project_images/background/${imageName}`} alt={imageName}/>

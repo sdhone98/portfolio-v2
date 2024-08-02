@@ -1,6 +1,19 @@
 {
   "experiance": [
     {
+      "name": "Sampavah ( Tata Motors )",
+      "designation": "Solution Analyst",
+      "duration": "Jun 2024 - Current",
+      "imageName": "Sampravah.jpg",
+      "description": [
+        "Developed a comprehensive dashboard application allowing multiple users to monitor and review each process from anywhere, improving visibility and oversight.",
+        "Created multiple reports and dashboards tailored to user roles, enabling personalized access to relevant information.",
+        "Enhanced process efficiency by 40% through real-time data analytics and performance tracking.",
+        "Facilitated detailed process information access for upper management, providing a complete overview of all plant operations.",
+        "Improved decision-making and operational transparency across Tata Motors plants by delivering an integrated and user-friendly dashboard solution."
+      ]
+    },
+    {
       "name": "Product Configurator ( Tata Motors )",
       "designation": "Solution Analyst",
       "duration": "Dec 2022 - Current",
