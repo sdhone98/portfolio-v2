@@ -19,14 +19,15 @@ const Home = ({ isDarkModeOn, contactRef }) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  const downloadCV = () => {
-    const link = document.createElement("a");
-    link.href = CV;
-    link.download = "Sagar Dhone.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const downloadCV = () => {
+  const fileId = "1O-NnvQHB3DJ-q5S4J95udgPjRPe5OyGH";
+  const link = document.createElement("a");
+  link.href = `https://drive.google.com/uc?export=download&id=${fileId}`;
+  link.download = "Sagar Dhone.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   return (
     <div className="home-main" style={{ background: backgroundPattern }}>
       <div className="container">
