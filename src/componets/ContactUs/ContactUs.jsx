@@ -2,6 +2,10 @@ import emailjs from "@emailjs/browser";
 import React from "react";
 import "./ContactUs.scss";
 
+const SERVICE_ID = import.meta.env.VITE_EMAIL_JS_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_EMAIL_JS_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_EMAIL_JS_PUBLIC_KEY;
+
 const ConatctUs = ({ isDarkModeOn }) => {
   const formEl = React.useRef(null);
 
@@ -12,15 +16,18 @@ const ConatctUs = ({ isDarkModeOn }) => {
 
   const sendEmail = () => {
     emailjs
-      .sendForm("service_rxh6xsa", "template_139ppx6", formEl.current, {
-        publicKey: "9QwNboAmcPYZfe0jF",
+      .sendForm(SERVICE_ID, TEMPLATE_ID, formEl.current, {
+        publicKey: PUBLIC_KEY,
       })
       .then(
         () => {
           console.log("SUCCESS!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log(
+            "FAILED...",
+            error.text
+          );
         }
       );
   };

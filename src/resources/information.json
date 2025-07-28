@@ -50,6 +50,14 @@
   ],
   "projects": [
     {
+      "name": "Quiz",
+      "date": "Jul 2025",
+      "hostUrl": "https://sagar-dhone-quiz.netlify.app/",
+      "url": "https://github.com/sdhone98/Quiz-React",
+      "techStack": ["React", "JavaScript", "Flowbite", "Django", "MySQL"],
+      "imageBackground": "Quiz.jpg"
+    },
+    {
       "name": "Expense Tracker",
       "date": "Jan 2024",
       "url": "https://github.com/sdhone98/ExpenseTracker",
@@ -64,13 +72,7 @@
       "techStack": ["React", "TypeScript", "CSS"],
       "imageBackground": "ToDoList.jpg"
     },
-    {
-      "name": "Quiz",
-      "date": "Aug 2023",
-      "url": "https://github.com/SagarSankeySolutions/React-Quiz",
-      "techStack": ["React", "JavaScript", "SCSS"],
-      "imageBackground": "Quiz.jpg"
-    },
+    
     {
       "name": "Wave Me",
       "date": "May 2024",
